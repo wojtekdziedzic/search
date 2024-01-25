@@ -1,0 +1,114 @@
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+.lato-regular {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* ==========================================================================
+   Page styles.
+   ========================================================================== */
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  color: #222;
+  background-color: #fff;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.search-container {
+  margin: 20px;
+  padding: 100px 0;
+
+  #search-input {
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+  }
+
+  #search-hint {
+    width: 400px;
+    list-style: none;
+    background-color: #ddd;
+    max-height: 400px;
+    overflow-y: auto;
+    .hint-item {
+      cursor: pointer;
+      padding: 8px 4px;
+      &:hover {
+        background-color: #aaa;
+      }
+    }
+  }
+}
+
+.main-container {
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .main-container {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-container {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-container {
+    width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main-container {
+    width: 1320px;
+  }
+}

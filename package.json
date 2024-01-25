@@ -1,0 +1,28 @@
+{
+  "name": "search-foss",
+  "version": "0.0.1",
+  "description": "task",
+  "private": true,
+  "keywords": [
+    ""
+  ],
+  "license": "",
+  "author": "Wojciech Dziedzic",
+  "scripts": {
+    "start": "webpack serve --open --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js",
+    "format": "npx prettier --write .",
+    "tsc": "tsc ./js/app.ts && esbuild ./js/app.js --minify --outfile=./js/app.min.js",
+    "esbuild": "esbuild ./js/app.js --minify --bundle --outfile=./js/app.min.js"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "esbuild": "0.19.12",
+    "html-webpack-plugin": "^5.5.3",
+    "prettier": "^3.2.4",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.9.0"
+  }
+}
